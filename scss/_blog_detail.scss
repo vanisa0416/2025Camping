@@ -1,0 +1,74 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    /*margin-bottom: 56px;*/  /* =80-24 */
+
+    .banner_img {
+        max-width: 948px;
+    }
+
+    .about {
+        width: 948px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        time {
+            display: block;
+            font-weight: 500;
+        }
+        p {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+    }
+}
+
+
+.content {
+    padding-top: calc(80px - 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items {
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 48px;
+  
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: $color-primary;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    /* 延伸閱讀 */
+    .ext {
+        list-style: disc;
+    }
+
+}
+
+
+/* 上一頁、下一頁 */
+.navigation {
+    width: 636px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}

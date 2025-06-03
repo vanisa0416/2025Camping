@@ -1,0 +1,106 @@
+/* 全域 border box */
+*,*::before,*::after {
+	box-sizing: border-box;
+	/* outline: solid 1px #000; */
+}
+
+$color-primary: #0027D5;
+$color-secondary: #6C757D;
+$color-grey: #EDEDED;
+$color-light: #FBFBFB;
+$color-danger: #E51737;
+
+
+/* 全站設定 */
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    background-color: $color-light;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $color-danger;
+        transition: 0.2s;
+    }
+}
+
+p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+.border {
+    border-bottom: 1px solid $color-secondary;
+    border-top: 1px solid $color-secondary;
+}
+
+/* hashtag */
+.hashtag {
+    display: inline-block;
+    font-size: 24px;
+    color: $color-primary;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+
+/* 藍色圓角按鈕 */
+.btn-primary {
+    display: inline-block;
+    border: solid 1px $color-primary;
+    background-color: $color-primary;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 12px;
+    vertical-align:top;
+
+    &:hover {
+        background-color: #fff;
+        color: $color-primary;
+        transition: 0.2s;
+    }
+}
+
+
+/* 白色按鈕 */
+.btn-white {
+    border: solid 1px #000;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 8px 16px;
+
+    &:hover {
+        border: solid 1px grey;
+        background-color: grey;
+        color: white;
+        transition: 0.2s;
+    }
+}
+
+
+/* 灰色圓角框 */
+.bubble-grey {
+    border: solid 1px $color-grey;
+    background-color: $color-grey;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 24px;
+    margin: 24px 0px;
+}
+
+/* 藍色文字 */
+.primary {
+    color: $color-primary;
+}
+/* 文字有底線 */
+.decoration {
+    text-decoration: underline;
+}

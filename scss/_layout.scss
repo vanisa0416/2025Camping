@@ -1,0 +1,57 @@
+/* 表頭 */
+.header {
+    display: flex;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+/* 表尾 */
+.footer {
+     max-width: 100%;
+}
+
+
+/* 下方的連絡資訊 */
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* email */
+.contact a {
+    display: inline-block;
+    width: 1036px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* 五個社交媒體的 icons */
+.icons .social {
+    width: 44px;
+}
+
+
+/* 最底下的表尾 */
+.copyrights {
+    font-weight: 500;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: white;
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+}

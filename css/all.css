@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/* googoe fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* rwd img css */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* css reset */
+/* 全域 border box */
+*, *::before, *::after {
+  box-sizing: border-box;
+  /* outline: solid 1px #000; */
+}
+
+/* 全站設定 */
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  background-color: #FBFBFB;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #E51737;
+  transition: 0.2s;
+}
+
+p {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+.border {
+  border-bottom: 1px solid #6C757D;
+  border-top: 1px solid #6C757D;
+}
+
+/* hashtag */
+.hashtag {
+  display: inline-block;
+  font-size: 24px;
+  color: #0027D5;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+/* 藍色圓角按鈕 */
+.btn-primary {
+  display: inline-block;
+  border: solid 1px #0027D5;
+  background-color: #0027D5;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 12px;
+  vertical-align: top;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #0027D5;
+  transition: 0.2s;
+}
+
+/* 白色按鈕 */
+.btn-white {
+  border: solid 1px #000;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+.btn-white:hover {
+  border: solid 1px grey;
+  background-color: grey;
+  color: white;
+  transition: 0.2s;
+}
+
+/* 灰色圓角框 */
+.bubble-grey {
+  border: solid 1px #EDEDED;
+  background-color: #EDEDED;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 24px;
+  margin: 24px 0px;
+}
+
+/* 藍色文字 */
+.primary {
+  color: #0027D5;
+}
+
+/* 文字有底線 */
+.decoration {
+  text-decoration: underline;
+}
+
+/* 全站設定 */
+/* 表頭 */
+.header {
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* 表尾 */
+.footer {
+  max-width: 100%;
+}
+
+/* 下方的連絡資訊 */
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* email */
+.contact a {
+  display: inline-block;
+  width: 1036px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* 五個社交媒體的 icons */
+.icons .social {
+  width: 44px;
+}
+
+/* 最底下的表尾 */
+.copyrights {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: white;
+}
+.copyrights p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+/* layout */
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  /*margin-bottom: 56px;*/ /* =80-24 */
+}
+.banner .banner_img {
+  max-width: 948px;
+}
+.banner .about {
+  width: 948px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .about time {
+  display: block;
+  font-weight: 500;
+}
+.banner .about p {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.content {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.items {
+  width: 636px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 48px;
+  /* 延伸閱讀 */
+}
+.items h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0027D5;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.items h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.items .ext {
+  list-style: disc;
+}
+
+/* 上一頁、下一頁 */
+.navigation {
+  width: 636px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+/* 部落格-detail */
+/*
+@import "index";
+@import "blog";
+*//*# sourceMappingURL=all.css.map */
