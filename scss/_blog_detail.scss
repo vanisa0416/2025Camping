@@ -1,15 +1,15 @@
 .banner {
+    max-width: 100%;
     display: flex;
     justify-content: center;
     gap: 24px;
-    /*margin-bottom: 56px;*/  /* =80-24 */
 
     .banner_img {
-        max-width: 948px;
+        width: 48vw;
     }
 
     .about {
-        width: 948px;
+        width: 48vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,7 +27,12 @@
 }
 
 
+
+
+
+/* 文章內容 */
 .content {
+    max-width: 636px;
     padding-top: calc(80px - 24px);
     display: flex;
     flex-direction: column;
@@ -35,7 +40,7 @@
 }
 
 .items {
-    width: 636px;
+    max-width: 636px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -66,9 +71,40 @@
 
 /* 上一頁、下一頁 */
 .navigation {
-    width: 636px;
+    max-width: 636px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding-bottom: 80px;
 }
+
+
+@media (max-width: 768px) {
+
+    .banner {
+        flex-direction: column;
+
+        .banner_img {
+            width: 100%;
+        }
+        .about {
+            width: 100%;
+        }
+    }
+}
+
+/*
+@media (max-width: 376px) {
+
+    .banner {
+        flex-direction: column;
+
+        .banner_img {
+            width: 100%;
+        }
+        .about {
+            width: 100%;
+        }
+    }
+}
+*/

@@ -65,7 +65,7 @@ img {
 /* 全域 border box */
 *, *::before, *::after {
   box-sizing: border-box;
-  /* outline: solid 1px #000; */
+  /*outline: solid 1px magenta;*/
 }
 
 /* 全站設定 */
@@ -158,6 +158,14 @@ section {
 }
 
 /* 全站設定 */
+.container {
+  max-width: 100vw;
+  padding: 0 12px; /* 不要貼齊螢幕邊緣 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* 表頭 */
 .header {
   display: flex;
@@ -172,11 +180,13 @@ section {
 
 /* 表尾 */
 .footer {
-  max-width: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 /* 下方的連絡資訊 */
 .contact {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 80px;
@@ -184,17 +194,20 @@ section {
 }
 
 /* email */
-.contact a {
+.email {
   display: inline-block;
-  width: 1036px;
+  width: 50%;
   font-size: 32px;
   font-weight: 500;
   color: #000;
 }
 
 /* 五個社交媒體的 icons */
-.icons .social {
-  width: 44px;
+.icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 236px;
 }
 
 /* 最底下的表尾 */
@@ -211,18 +224,34 @@ section {
   margin-bottom: 0px;
 }
 
+@media (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .email {
+    font-size: 24px;
+  }
+}
+@media (max-width: 376px) {
+  .contact {
+    display: none;
+  }
+}
 /* layout */
 .banner {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   gap: 24px;
-  /*margin-bottom: 56px;*/ /* =80-24 */
 }
 .banner .banner_img {
-  max-width: 948px;
+  width: 48vw;
 }
 .banner .about {
-  width: 948px;
+  width: 48vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +266,9 @@ section {
   margin-top: 8px;
 }
 
+/* 文章內容 */
 .content {
+  max-width: 636px;
   padding-top: 56px;
   display: flex;
   flex-direction: column;
@@ -245,7 +276,7 @@ section {
 }
 
 .items {
-  width: 636px;
+  max-width: 636px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -271,13 +302,39 @@ section {
 
 /* 上一頁、下一頁 */
 .navigation {
-  width: 636px;
+  max-width: 636px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner .banner_img {
+    width: 100%;
+  }
+  .banner .about {
+    width: 100%;
+  }
+}
+/*
+@media (max-width: 376px) {
+
+    .banner {
+        flex-direction: column;
+
+        .banner_img {
+            width: 100%;
+        }
+        .about {
+            width: 100%;
+        }
+    }
+}
+*/
 /* 部落格-detail */
 /*
 @import "index";
