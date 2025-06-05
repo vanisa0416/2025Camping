@@ -36,10 +36,13 @@ section {
     margin-bottom: 24px;
 }
 
-.border {
-    border-bottom: 1px solid $color-secondary;
+.border-top {
     border-top: 1px solid $color-secondary;
 }
+.border-bottom {
+    border-bottom: 1px solid $color-secondary;
+}
+
 
 /* hashtag */
 .hashtag {

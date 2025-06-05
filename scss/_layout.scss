@@ -33,6 +33,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* 如果畫面變小，自動換行 */
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -42,20 +43,22 @@
 .email {
     display: inline-block;
     width: 50%;
-    font-size: 32px;
+    font-size: clamp(1rem, 0.6466rem + 1.5038vw, 2rem);  /* https://clamp.font-size.app/ */
     font-weight: 500;
     color: #000;
 }
 
+.box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
 
 /* 五個社交媒體的 icons */
 .icons {
-    width: 50%;
+    max-width: 236px;
     display: flex;
     justify-content: space-between;
-    max-width: 236px;
-
-
 }
 
 
@@ -81,10 +84,6 @@
         align-items: center;
         padding-top: 80px;
         padding-bottom: 80px;
-    }
-
-    .email {
-        font-size: 24px;
     }
 }
 
