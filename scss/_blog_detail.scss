@@ -5,29 +5,33 @@
     gap: 24px;
 
     .banner_img {
-        width: 48vw;
+        width: 50vw;
     }
 
-    .about {
-        width: 48vw;
+    .about-wrapper {
+        width: 50vw;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        time {
-            display: block;
-            font-weight: 500;
+        align-items: center;
+
+        .about {
+            max-width: 636px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        p {
-            font-size: 28px;
-            font-weight: 700;
+        
+
+        h2 {
             margin-top: 8px;
         }
     }
 }
 
 
-
+time {
+    display: block;
+    font-weight: 500;
+}
 
 
 /* 文章內容 */
@@ -87,11 +91,12 @@
         .banner_img {
             width: 100%;
         }
-        .about {
+        .about-wrapper {
             width: 100%;
-            padding: 48px 0px;
+            padding: 48px 12px;
         }
     }
+
 
     .content {
         padding-top: calc(64px - 24px);  /* 24 = h2 的 margin-top */

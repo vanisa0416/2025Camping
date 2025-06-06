@@ -7,6 +7,7 @@
 $color-primary: #0027D5;
 $color-secondary: #6C757D;
 $color-grey: #EDEDED;
+$color-grey2: #4B4B4B;
 $color-light: #FBFBFB;
 $color-danger: #E51737;
 
@@ -16,6 +17,17 @@ body {
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
     background-color: $color-light;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 900;
+    color: $color-primary;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
 }
 
 a {
@@ -106,4 +118,12 @@ section {
 /* 文字有底線 */
 .decoration {
     text-decoration: underline;
+}
+
+/* 只顯示前二行，後面... */
+.line-clamp {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
 }

@@ -57,6 +57,7 @@ table {
 
 /* rwd img css */
 img {
+  vertical-align: middle; /* 消除 img 的空白 */
   max-width: 100%;
   height: auto;
 }
@@ -73,6 +74,17 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 1.5;
   background-color: #FBFBFB;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 900;
+  color: #0027D5;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
 }
 
 a {
@@ -158,6 +170,14 @@ section {
 /* 文字有底線 */
 .decoration {
   text-decoration: underline;
+}
+
+/* 只顯示前二行，後面... */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 /* 全站設定 */
@@ -254,22 +274,26 @@ section {
   gap: 24px;
 }
 .banner .banner_img {
-  width: 48vw;
+  width: 50vw;
 }
-.banner .about {
-  width: 48vw;
+.banner .about-wrapper {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+.banner .about-wrapper .about {
+  max-width: 636px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.banner .about time {
+.banner .about-wrapper h2 {
+  margin-top: 8px;
+}
+
+time {
   display: block;
   font-weight: 500;
-}
-.banner .about p {
-  font-size: 28px;
-  font-weight: 700;
-  margin-top: 8px;
 }
 
 /* 文章內容 */
@@ -322,9 +346,9 @@ section {
   .banner .banner_img {
     width: 100%;
   }
-  .banner .about {
+  .banner .about-wrapper {
     width: 100%;
-    padding: 48px 0px;
+    padding: 48px 12px;
   }
   .content {
     padding-top: 40px; /* 24 = h2 的 margin-top */
@@ -333,8 +357,117 @@ section {
     padding-bottom: 64px;
   }
 }
-/* 部落格-detail */
+.banner .about p {
+  margin: 8px 0px;
+}
+
+.btn-wrapper {
+  margin: 16px 0px;
+}
+
+.heroSection {
+  max-width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+.heroSection h2 {
+  color: #0027D5;
+  margin-top: 12px;
+}
+.heroSection .photo {
+  width: 50vw;
+  background-image: url("../images/desktop/index/Hero Section.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.heroSection .intro {
+  width: 50vw;
+  background-image: url("../images/desktop/index/Hero Section2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.blog-content {
+  max-width: 1296px;
+}
+
+/* 分頁 */
+.pagination-wrapper {
+  margin-bottom: 80px;
+}
+.pagination-wrapper .pagination {
+  display: flex;
+  border: solid 1px #fff;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0px 20px;
+  /* 正在閱讀的這一頁，滑鼠不能點 */
+}
+.pagination-wrapper .pagination li a {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  padding: 8px 0px;
+  margin: 8px 0px;
+}
+.pagination-wrapper .pagination a:hover {
+  text-decoration: underline;
+}
+.pagination-wrapper .pagination a.focus-page {
+  color: #0027D5;
+  text-decoration: none;
+  pointer-events: none; /* 禁止滑鼠點擊 */
+  cursor: default; /* 換成一般滑鼠游標 */
+}
+
+/* 搜尋 */
+.search-wrapper {
+  margin-top: 80px;
+  display: inline-block;
+  /* 放大鏡 */
+  /* 輸入文字框 */
+}
+.search-wrapper .bi {
+  color: #4B4B4B;
+}
+.search-wrapper .input {
+  border: 0px #fff;
+  color: #4B4B4B;
+  padding-left: 10px;
+}
+
+/* 文章列表 ul */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  /*row-gap: 40px;*/
+  /* li */
+}
+.cards .card-item {
+  display: block;
+  width: 416px;
+  margin: 40px 0px;
+  /*background-color:rgba(251, 240, 255, 0.376);*/
+}
+.cards .article-wrapper {
+  padding: 16px 0px;
+}
+.cards .article-wrapper p {
+  padding-top: 8px;
+}
+
 /*
-@import "index";
+
 @import "blog";
 *//*# sourceMappingURL=all.css.map */

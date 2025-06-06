@@ -50,6 +50,7 @@ table {
 
 /* rwd img css */
 img {
+	vertical-align: middle; 		/* 消除 img 的空白 */
 	max-width: 100%;
 	height: auto;
 }

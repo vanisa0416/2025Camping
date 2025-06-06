@@ -1,0 +1,133 @@
+.banner .about {
+    p {
+        margin: 8px 0px;
+    }
+}
+
+.btn-wrapper {
+    margin: 16px 0px;
+}
+
+.heroSection {
+    
+    max-width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+
+    h2 {
+        color: $color-primary;
+        margin-top: 12px;
+    }
+
+    .photo {
+        width: 50vw;
+        background-image: url("../images/desktop/index/Hero Section.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+    }
+
+    .intro {
+        width: 50vw;
+        background-image: url("../images/desktop/index/Hero Section2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 80px;
+    }
+}
+
+
+.blog-content {
+    max-width: 1296px;
+}
+
+
+/* 分頁 */
+.pagination-wrapper {
+
+    margin-bottom: 80px;
+
+    .pagination {
+        display: flex;
+        border: solid 1px #fff;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 0px 20px;
+        
+        li a {
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+            padding: 8px 0px;
+            margin :8px 0px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 正在閱讀的這一頁，滑鼠不能點 */
+        a.focus-page {
+            color: $color-primary;
+            text-decoration: none;
+            pointer-events: none;   /* 禁止滑鼠點擊 */
+            cursor: default;       /* 換成一般滑鼠游標 */
+        }
+    }
+}
+
+
+
+/* 搜尋 */
+.search-wrapper {
+    margin-top: 80px;
+    display: inline-block;
+
+    /* 放大鏡 */
+    .bi {
+        color: $color-grey2;
+    }
+
+    /* 輸入文字框 */
+    .input {
+        border: 0px #fff;
+        color: $color-grey2;
+        padding-left: 10px;
+    }
+}
+
+
+/* 文章列表 ul */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /*row-gap: 40px;*/
+
+    /* li */
+    .card-item {
+        display: block;
+        width: 416px;
+        margin: 40px 0px;
+        /*background-color:rgba(251, 240, 255, 0.376);*/
+    }
+
+    .article-wrapper {
+        padding: 16px 0px;
+
+        p {
+            padding-top: 8px;
+            
+        }
+    }
+
+}
