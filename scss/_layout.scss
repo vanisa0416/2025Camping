@@ -82,12 +82,13 @@
     .contact {
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 }
 
 @media (max-width: 376px) {
+    
     .contact {
         display: none;
     }

@@ -33,7 +33,7 @@
 /* 文章內容 */
 .content {
     max-width: 636px;
-    padding-top: calc(80px - 24px);
+    padding-top: calc(80px - 24px);  /* 24 = h2 的 margin-top */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,22 +89,16 @@
         }
         .about {
             width: 100%;
+            padding: 48px 0px;
         }
     }
-}
 
-/*
-@media (max-width: 376px) {
-
-    .banner {
-        flex-direction: column;
-
-        .banner_img {
-            width: 100%;
-        }
-        .about {
-            width: 100%;
-        }
+    .content {
+        padding-top: calc(64px - 24px);  /* 24 = h2 的 margin-top */
     }
+
+    .navigation {
+        padding-bottom: 64px;
+    }
+
 }
-*/
