@@ -378,7 +378,7 @@ time {
 }
 .heroSection .photo {
   width: 50vw;
-  background-image: url("../images/desktop/index/Hero Section.png");
+  background-image: url("images/desktop/index/Hero Section.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -386,7 +386,7 @@ time {
 }
 .heroSection .intro {
   width: 50vw;
-  background-image: url("../images/desktop/index/Hero Section2.png");
+  background-image: url("images/desktop/index/Hero Section2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
