@@ -402,7 +402,7 @@ time {
 
 .heroSection {
   max-width: 100%;
-  height: calc(100dvh - 90px);
+  height: calc(100svh - 90px);
   display: flex;
   justify-content: center;
 }
@@ -526,12 +526,12 @@ time {
   .heroSection .photo {
     width: 100vw;
     /*height: calc(100vh - 90px);*/
-    height: calc(70dvh - 90px);
+    height: calc(70svh - 90px);
   }
   .heroSection .intro {
     width: 100vw;
     padding-left: 48px;
-    height: 30dvh;
+    height: 30svh;
   }
 }
 @media (max-width: 768px) {
