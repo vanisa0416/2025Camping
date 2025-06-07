@@ -14,7 +14,7 @@
     height: calc(100vh - 90px);
     display: flex;
     justify-content: center;
-    gap: 0px;
+
 
     h2 {
         color: $color-primary;
@@ -107,11 +107,10 @@
 
 
 /* 文章列表 ul */
-.cards {
+.blog-content .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    /*row-gap: 40px;*/
 
     /* li */
     .card-item {
@@ -130,4 +129,90 @@
         }
     }
 
+}
+
+
+
+@media (max-width: 1440px) {
+
+    /* 部落格內容 */
+    .blog-content {
+
+        /* 文章列表 ul */
+        .cards {
+            width: 100%;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+
+            /* li */
+            .card-item {
+                display: block;
+                width: 45%;
+                margin: 40px 0px;
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    /* 形象照那邊 */
+    .heroSection {
+        display: block;
+        /*height: 100%;*/
+        
+        .photo {
+            width: 100vw;
+            /*height: calc(100vh - 90px);*/
+            height: calc(100vh - 30vh - 90px);
+
+        }
+
+        .intro {
+            width: 100vw;
+            padding-left: 48px;
+            height: 30vh;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .banner .about-wrapper {
+
+        .about {
+            max-width: 100%;
+        }
+
+    }
+
+    /* 部落格內容，768px 以下單欄顯示 */
+    .blog-content {
+
+        /* 文章列表 ul */
+        .cards {
+            /*width: 100%;
+            justify-content:space-evenly;
+            flex-wrap: wrap;*/
+
+            /* li */
+            .card-item {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .heroSection .intro {
+        padding-left: 24px;
+    }
 }

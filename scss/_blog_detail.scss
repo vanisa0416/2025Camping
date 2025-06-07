@@ -83,6 +83,24 @@ time {
 }
 
 
+
+@media (max-width: 992px) {
+
+    .banner {
+        padding-right: 12px;
+        .about-wrapper {
+            width: 50vw;
+            
+        }
+
+        .banner_img {
+            width: 50vw;
+        }
+    }
+}
+
+
+
 @media (max-width: 768px) {
 
     .banner {

@@ -66,7 +66,7 @@ img {
 /* 全域 border box */
 *, *::before, *::after {
   box-sizing: border-box;
-  /*outline: solid 1px magenta;*/
+  outline: solid 1px magenta;
 }
 
 /* 全站設定 */
@@ -77,7 +77,8 @@ body {
 }
 
 h1 {
-  font-size: 120px;
+  /* font-size: 120px;*/
+  font-size: clamp(3.75rem, 2.8398rem + 3.8835vw, 7.5rem); /* https://clamp.font-size.app/ */
   font-weight: 900;
   color: #0027D5;
 }
@@ -261,6 +262,24 @@ section {
     padding-bottom: 48px;
   }
 }
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner .banner_img {
+    width: 100%;
+  }
+  .banner .about-wrapper {
+    width: 100%;
+    padding: 48px 12px;
+  }
+  .content {
+    padding-top: 40px; /* 24 = h2 的 margin-top */
+  }
+  .navigation {
+    padding-bottom: 64px;
+  }
+}
 @media (max-width: 376px) {
   .contact {
     display: none;
@@ -339,6 +358,17 @@ time {
   padding-bottom: 80px;
 }
 
+@media (max-width: 992px) {
+  .banner {
+    padding-right: 12px;
+  }
+  .banner .about-wrapper {
+    width: 50vw;
+  }
+  .banner .banner_img {
+    width: 50vw;
+  }
+}
 @media (max-width: 768px) {
   .banner {
     flex-direction: column;
@@ -370,7 +400,6 @@ time {
   height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
-  gap: 0px;
 }
 .heroSection h2 {
   color: #0027D5;
@@ -447,26 +476,82 @@ time {
 }
 
 /* 文章列表 ul */
-.cards {
+.blog-content .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  /*row-gap: 40px;*/
   /* li */
 }
-.cards .card-item {
+.blog-content .cards .card-item {
   display: block;
   width: 416px;
   margin: 40px 0px;
   /*background-color:rgba(251, 240, 255, 0.376);*/
 }
-.cards .article-wrapper {
+.blog-content .cards .article-wrapper {
   padding: 16px 0px;
 }
-.cards .article-wrapper p {
+.blog-content .cards .article-wrapper p {
   padding-top: 8px;
 }
 
+@media (max-width: 1440px) {
+  /* 部落格內容 */
+  .blog-content {
+    /* 文章列表 ul */
+  }
+  .blog-content .cards {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* li */
+  }
+  .blog-content .cards .card-item {
+    display: block;
+    width: 45%;
+    margin: 40px 0px;
+  }
+}
+@media (max-width: 992px) {
+  /* 形象照那邊 */
+  .heroSection {
+    display: block;
+    /*height: 100%;*/
+  }
+  .heroSection .photo {
+    width: 100vw;
+    /*height: calc(100vh - 90px);*/
+    height: calc(70vh - 90px);
+  }
+  .heroSection .intro {
+    width: 100vw;
+    padding-left: 48px;
+    height: 30vh;
+  }
+}
+@media (max-width: 768px) {
+  .banner .about-wrapper .about {
+    max-width: 100%;
+  }
+  /* 部落格內容，768px 以下單欄顯示 */
+  .blog-content {
+    /* 文章列表 ul */
+  }
+  .blog-content .cards {
+    /*width: 100%;
+    justify-content:space-evenly;
+    flex-wrap: wrap;*/
+    /* li */
+  }
+  .blog-content .cards .card-item {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .heroSection .intro {
+    padding-left: 24px;
+  }
+}
 /*
 
 @import "blog";
