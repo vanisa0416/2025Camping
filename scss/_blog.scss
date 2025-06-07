@@ -92,6 +92,7 @@
 
 /* 搜尋 */
 .search-wrapper {
+    width: 416px;
     margin-top: 80px;
     display: inline-block;
 
@@ -105,6 +106,10 @@
         border: 0px #fff;
         color: $color-grey2;
         padding-left: 10px;
+    }
+    
+    .btn-white {
+        padding-left: 20px;
     }
 }
 
@@ -140,6 +145,10 @@
     /* 部落格內容 */
     .blog-content {
 
+        .search-wrapper {
+            margin-left: 30px;
+        }
+
         /* 文章列表 ul */
         .cards {
             width: 100%;
@@ -152,14 +161,36 @@
                 width: 45%;
                 margin: 40px 0px;
             }
+
+
+            /* 處理圖片 */
+            .img-wrapper {
+                width: 100%;
+                aspect-ratio: 416/200;
+                object-fit: cover;          /* 不希望圖片會變形，而是裁切中間部份 */
+            
+                .card-img {
+                    height: 100%;
+                    max-width: 100%;
+                }
+            }
         }
     }
+
 
 }
 
 
 
 @media (max-width: 992px) {
+
+    /* 部落格內容 */
+    .blog-content {
+        .search-wrapper {
+            width: 43.5vw;
+            margin-left: 20px;
+        }
+    }
 
 
     /* 形象照那邊 */
@@ -192,11 +223,22 @@
                 width: 100%;
             }
         }
-
     }
 
-
 }
+
+
+/* 特調~ */
+@media (max-width: 949px) {
+    .blog-content .cards .card-item { 
+
+        /* 處理圖片 */
+        .img-wrapper {
+            aspect-ratio: 351/200;
+        }
+    }
+}
+
 
 
 @media (max-width: 768px) {
@@ -238,13 +280,15 @@
     /* 部落格內容，768px 以下單欄顯示 */
     .blog-content {
 
-        /* 文章列表 ul */
-        .cards {
+        /* 搜尋 */
+        .search-wrapper {
+            width: 100%;
+            margin-left: 0px;
+        }
 
-            /* li */
-            .card-item {
-                width: 100%;
-            }
+        /* 文章列表 ul */
+        .cards .card-item {
+            width: 100%;
         }
     }
 
