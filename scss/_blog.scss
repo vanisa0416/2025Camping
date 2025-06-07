@@ -15,10 +15,9 @@
 .heroSection {
     
     max-width: 100%;
-    height: calc(100svh - 90px);
+    height: calc(100svh - 90px);    /* svh: 扣掉網址列與工具列的可視區域高度 */
     display: flex;
     justify-content: center;
-
 
     h2 {
         color: $color-primary;
@@ -121,7 +120,6 @@
         display: block;
         width: 416px;
         margin: 40px 0px;
-        /*background-color:rgba(251, 240, 255, 0.376);*/
     }
 
     .article-wrapper {
@@ -129,7 +127,6 @@
 
         p {
             padding-top: 8px;
-            
         }
     }
 
@@ -170,7 +167,6 @@
         
         .photo {
             width: 100vw;
-            /*height: calc(100vh - 90px);*/
             height: calc(100svh - 30svh - 90px);
 
         }
@@ -187,35 +183,32 @@
 
 @media (max-width: 768px) {
 
-    /*
-    .img-wrapper {
+    .banner {
+        padding-right: 0px;
+
+        .img-wrapper {
+            width: 100%;
+            aspect-ratio: 1/1;      /* 調整裡面的圖片變成 1:1 */
         
-    }*/
-
-
-    .banner .about-wrapper {
-
-        .about {
-            max-width: 100%;
-        }
-
-    }
-
-    /* 部落格內容，768px 以下單欄顯示 */
-    .blog-content {
-
-        /* 文章列表 ul */
-        .cards {
-            /*width: 100%;
-            justify-content:space-evenly;
-            flex-wrap: wrap;*/
-
-            /* li */
-            .card-item {
+            .banner_img {
                 width: 100%;
+                height: 100%;
             }
         }
+
+        .about-wrapper {
+
+            .about {
+                max-width: 100%;
+            }
+
+        }
     }
+
+
+
+
+
 
 }
 
@@ -225,4 +218,18 @@
     .heroSection .intro {
         padding-left: 24px;
     }
+
+    /* 部落格內容，768px 以下單欄顯示 */
+    .blog-content {
+
+        /* 文章列表 ul */
+        .cards {
+
+            /* li */
+            .card-item {
+                width: 100%;
+            }
+        }
+    }
+    
 }

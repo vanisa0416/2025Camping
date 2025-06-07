@@ -1,7 +1,7 @@
 /* 全域 border box */
 *,*::before,*::after {
 	box-sizing: border-box;
-	outline: solid 1px magenta;
+	/* outline: solid 1px magenta; */
 }
 
 $color-primary: #0027D5;
@@ -20,8 +20,7 @@ body {
 }
 
 h1 {
-    /* font-size: 120px;*/
-    font-size: clamp(3.75rem, 2.8398rem + 3.8835vw, 7.5rem);          /* https://clamp.font-size.app/ */
+    font-size: clamp(3.25rem, 2.2184rem + 4.4013vw, 7.5rem);    /* 用 https://clamp.font-size.app/ 產生的 */
     font-weight: 900;
     color: $color-primary;
 }
