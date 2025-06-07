@@ -387,6 +387,11 @@ time {
     padding-bottom: 64px;
   }
 }
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
 .banner .about p {
   margin: 8px 0px;
 }
@@ -397,7 +402,7 @@ time {
 
 .heroSection {
   max-width: 100%;
-  height: calc(100vh - 90px);
+  height: calc(100dvh - 90px);
   display: flex;
   justify-content: center;
 }
@@ -530,6 +535,10 @@ time {
   }
 }
 @media (max-width: 768px) {
+  /*
+  .img-wrapper {
+
+  }*/
   .banner .about-wrapper .about {
     max-width: 100%;
   }

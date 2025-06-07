@@ -1,3 +1,7 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+}
 .banner .about {
     p {
         margin: 8px 0px;
@@ -11,7 +15,7 @@
 .heroSection {
     
     max-width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100dvh - 90px);
     display: flex;
     justify-content: center;
 
@@ -182,6 +186,12 @@
 
 
 @media (max-width: 768px) {
+
+    /*
+    .img-wrapper {
+        
+    }*/
+
 
     .banner .about-wrapper {
 
