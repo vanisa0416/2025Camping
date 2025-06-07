@@ -526,11 +526,11 @@ time {
     display: block;
   }
   .heroSection .photo {
-    width: 100vw;
+    width: 100%;
     height: calc(70svh - 90px);
   }
   .heroSection .intro {
-    width: 100vw;
+    width: 100%;
     padding-left: 48px;
     height: 30svh;
   }

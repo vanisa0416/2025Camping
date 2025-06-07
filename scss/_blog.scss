@@ -136,6 +136,7 @@
 
 @media (max-width: 1440px) {
 
+    
     /* 部落格內容 */
     .blog-content {
 
@@ -160,18 +161,19 @@
 
 @media (max-width: 992px) {
 
+
     /* 形象照那邊 */
     .heroSection {
         display: block;
         
         .photo {
-            width: 100vw;
+            width: 100%;
             height: calc(100svh - 30svh - 90px);
 
         }
 
         .intro {
-            width: 100vw;
+            width: 100%;
             padding-left: 48px;
             height: 30svh;
         }
@@ -192,6 +194,7 @@
         }
 
     }
+
 
 }
 
