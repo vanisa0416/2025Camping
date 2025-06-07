@@ -88,20 +88,34 @@ time {
 
     .banner {
         padding-right: 12px;
-        .about-wrapper {
-            width: 50vw;
-            
-        }
 
         .banner_img {
             width: 50vw;
         }
+
+        .about-wrapper {
+            width: 50vw; 
+        }
+
     }
 }
 
 
 
 @media (max-width: 768px) {
+
+    .content {
+        padding-top: calc(64px - 24px);  /* 24 = h2 的 margin-top */
+    }
+
+    .navigation {
+        padding-bottom: 64px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
 
     .banner {
         flex-direction: column;
@@ -114,14 +128,4 @@ time {
             padding: 48px 12px;
         }
     }
-
-
-    .content {
-        padding-top: calc(64px - 24px);  /* 24 = h2 的 margin-top */
-    }
-
-    .navigation {
-        padding-bottom: 64px;
-    }
-
 }

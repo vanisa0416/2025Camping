@@ -163,7 +163,6 @@
     /* 形象照那邊 */
     .heroSection {
         display: block;
-        /*height: 100%;*/
         
         .photo {
             width: 100vw;
@@ -178,36 +177,35 @@
         }
     }
 
+
+    .banner {
+
+        /* 992px 以下，維持照片高度，顯示正方型比例 */
+        .img-wrapper {
+            height: 407px;
+            aspect-ratio: 1/1;
+        
+            .banner_img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+    }
+
 }
 
 
 @media (max-width: 768px) {
 
     .banner {
-        padding-right: 0px;
+        gap: 16px;
 
+        /* 768px 以下，維持照片高度，顯示正方型比例 */
         .img-wrapper {
-            width: 100%;
-            aspect-ratio: 1/1;      /* 調整裡面的圖片變成 1:1 */
-        
-            .banner_img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .about-wrapper {
-
-            .about {
-                max-width: 100%;
-            }
-
+            height: 350px;
         }
     }
-
-
-
-
 
 
 }
@@ -217,6 +215,21 @@
 
     .heroSection .intro {
         padding-left: 24px;
+    }
+    
+    /* 576px 以下變成單欄顯示，圖片調整為 1:1 */
+    .banner {
+        padding-right: 0px;
+        
+        .img-wrapper {
+            width: 100%;
+            aspect-ratio: 1/1;
+        
+            .banner_img {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     /* 部落格內容，768px 以下單欄顯示 */
@@ -231,5 +244,5 @@
             }
         }
     }
-    
+
 }
