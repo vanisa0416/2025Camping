@@ -325,6 +325,13 @@ time {
   flex-direction: column;
   justify-content: center;
 }
+.content .item img {
+  transition: transform 0.2s ease-out; /* 讓動畫效果效得平滑 */
+}
+.content .item img:hover {
+  transform: scale(1.02);
+  filter: blur(1px);
+}
 
 .items {
   max-width: 636px;
@@ -437,6 +444,14 @@ time {
 
 .blog-content {
   max-width: 1296px;
+}
+
+.cards .card-item .card-img {
+  transition: transform 0.2s ease-out; /* 讓動畫效果效得平滑 */
+}
+.cards .card-item .card-img:hover {
+  transform: scale(1.05);
+  filter: blur(1px);
 }
 
 /* 分頁 */

@@ -41,6 +41,16 @@ time {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .item {
+        img {
+            transition: transform 0.2s ease-out;    /* 讓動畫效果效得平滑 */
+            &:hover {
+                transform: scale(1.02);
+                filter: blur(1px);
+            }
+        }
+    }
 }
 
 .items {

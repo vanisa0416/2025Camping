@@ -54,6 +54,17 @@
 }
 
 
+.cards .card-item {
+    .card-img {
+        transition: transform 0.2s ease-out;    /* 讓動畫效果效得平滑 */
+        &:hover {
+            transform: scale(1.05);
+            filter: blur(1px);
+        }
+    }
+}
+
+
 /* 分頁 */
 .pagination-wrapper {
 
