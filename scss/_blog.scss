@@ -171,14 +171,14 @@
         .photo {
             width: 100vw;
             /*height: calc(100vh - 90px);*/
-            height: calc(100vh - 30vh - 90px);
+            height: calc(100dvh - 30dvh - 90px);
 
         }
 
         .intro {
             width: 100vw;
             padding-left: 48px;
-            height: 30vh;
+            height: 30dvh;
         }
     }
 
